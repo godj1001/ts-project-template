@@ -1,0 +1,24 @@
+{
+  "name": "ts-template",
+  "version": "1.0.0",
+  "description": "a template for typescript",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "dev": "set NODE_ENV=developemnt&& rollup -c rollup.config.js -w",
+    "build": "rm -fr lib && set NODE_ENV=production&& rollup -c rollup.config.js"
+  },
+  "author": "groove",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^4.29.2",
+    "rollup": "^2.56.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "rollup-plugin-commonjs": "^10.1.0"
+  }
+}
